@@ -4,8 +4,9 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 
 // Import components
-import Footer from "./components/Footer";
-import Main from "./pages/Main";
+import Footer from "../Footer";
+import Header from "../Header";
+import Main from "../../pages/Main";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="Site">
           <div className="Site-content">
+            <Header />
             <Switch>
               <Route exact path="/" component={Main} />
             </Switch>

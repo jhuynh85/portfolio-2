@@ -1,10 +1,10 @@
 import React from "react";
 import CSSModules from "react-css-modules";
-import styles from "./First.module.css";
+import styles from "./Main.module.css";
 
 const Main = () => (
-  <div>
-    <h1 styleName="header">Testing</h1>
+  <div styleName="parallax">
+    <h3>Testing</h3>
   </div>
 );
 

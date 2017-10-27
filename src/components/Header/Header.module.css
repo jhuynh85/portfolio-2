@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+
+.centeredHeader {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 20px 24px;
+  max-width: 1000px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  margin: 0 5px;
+}
