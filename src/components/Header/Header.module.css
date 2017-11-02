@@ -12,14 +12,15 @@ header {
   flex: 1;
   justify-content: space-between;
   padding: 20px 24px;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 li {
-  margin: 0 5px;
+  margin: 0 20px;
 }

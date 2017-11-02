@@ -1,8 +1,7 @@
 import React from "react";
 import CSSModules from "react-css-modules";
 import styles from "./Main.module.css";
-import { Parallax, Background } from "react-parallax";
-import coffeeImage from "../../assets/images/cup-of-coffee-laptop-office-macbook-89786.jpeg";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const SPEED = 0.4;
 
@@ -13,13 +12,33 @@ class Main extends React.Component {
     this.state = {};
   }
 
+  componentDidMount = () => {
+    let parallax = document.querySelectorAll(".parallax");
+
+    this.setState({ parallax });
+
+    window.addEventListener("scroll", this.handleScroll);
+    console.log("parallax select: ", this.state.parallax);
+  };
+
+  componentWillUnmount = () => {
+    window.removeEventListener("scroll", this.handleScroll);
+  };
+
+  handleScroll = event => {
+    [].slice.call(this.state.parallax).forEach((el, i) => {
+      let windowYOffset = window.pageYOffset;
+      let elBackgrounPos = "50% " + windowYOffset * SPEED + "px";
+
+      el.style.backgroundPosition = elBackgrounPos;
+    });
+  };
+
   render() {
     return (
-      <div className="box">
-        <div className="parallax">
-          <Parallax bgImage={coffeeImage} bgHeight="500px" strength={400}>
-            <h3>Parallax-1</h3>
-          </Parallax>
+      <ParallaxProvider>
+        <div className="parallax" styleName="parallax-1">
+          <h3>Parallax-1</h3>
         </div>
         <h2>Lorem Ipsum</h2>
         <p>
@@ -82,7 +101,7 @@ class Main extends React.Component {
           elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim
           aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.
         </p>
-      </div>
+      </ParallaxProvider>
     );
   }
 }
