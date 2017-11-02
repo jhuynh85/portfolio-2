@@ -1,10 +1,12 @@
 import React from "react";
 import CSSModules from "react-css-modules";
 import styles from "./Main.module.css";
-import { Parallax, Background } from "react-parallax";
-import coffeeImage from "../../assets/images/cup-of-coffee-laptop-office-macbook-89786.jpeg";
+import { Parallax } from "react-parallax";
 
-const SPEED = 0.4;
+import coffeeImage from "../../assets/images/cup-of-coffee-laptop-office-macbook-89786.jpeg";
+import lightBulbImage from "../../assets/images/pexels-photo-355904.jpeg";
+
+const STRENGTH = 200;
 
 class Main extends React.Component {
   constructor(props) {
@@ -15,12 +17,10 @@ class Main extends React.Component {
 
   render() {
     return (
-      <div className="box">
-        <div className="parallax">
-          <Parallax bgImage={coffeeImage} bgHeight="500px" strength={400}>
-            <h3>Parallax-1</h3>
-          </Parallax>
-        </div>
+      <div>
+        <Parallax bgImage={coffeeImage} strength={STRENGTH}>
+          <div styleName="filler" />
+        </Parallax>
         <h2>Lorem Ipsum</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt
@@ -50,9 +50,9 @@ class Main extends React.Component {
           elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim
           aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.
         </p>
-        <div className="parallax" styleName="parallax-2">
-          <h3>Parallax-2</h3>
-        </div>
+        <Parallax bgImage={lightBulbImage} strength={STRENGTH}>
+          <div styleName="filler" />
+        </Parallax>
         <h2>Lorem Ipsum</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt

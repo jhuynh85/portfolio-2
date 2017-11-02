@@ -1,26 +1,14 @@
-* {
-  margin: 0;
-}
-
-.centeredHeader {
-  display: flex;
-  justify-content: center;
-}
-
-header {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  padding: 20px 24px;
-  max-width: 1200px;
-}
-
-ul {
+.nav-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.logo {
+  composes: title from "../../index.css";
+  font-size: 16pt;
+  margin-left: 30px;
 }
 
 li {
-  margin: 0 20px;
+  text-transform: uppercase;
 }
