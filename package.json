@@ -10,8 +10,10 @@
     "react-css-modules": "^4.7.1",
     "react-dom": "^16.0.0",
     "react-parallax": "^1.5.0",
+    "react-rotating-text": "^1.2.1",
     "react-router-dom": "^4.2.2",
-    "react-scroll-parallax": "^1.1.1"
+    "react-scroll-parallax": "^1.1.1",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",
