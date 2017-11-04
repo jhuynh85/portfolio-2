@@ -16,7 +16,7 @@ class App extends Component {
           <div className="Site-content">
             <Header />
             <Switch>
-              <Route exact path="/" component={Main} />
+              <Route exact path={process.env.PUBLIC_URL + "/"} component={Main} />
             </Switch>
           </div>
           <Footer />
