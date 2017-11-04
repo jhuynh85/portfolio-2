@@ -19,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "nodemonConfig": {
     "ignore": [
@@ -31,5 +33,6 @@
   "proxy": "http://localhost:5000/",
   "devDependencies": {
     "gh-pages": "^1.0.0"
-  }
+  },
+  "homepage": "https://jhuynh85.github.io/portfolio-2"
 }
