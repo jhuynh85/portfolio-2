@@ -4,11 +4,12 @@ import styles from "./Header.module.css";
 import { Link, animateScroll as Scroller } from "react-scroll";
 
 class Header extends React.Component {
+
   scrollToTop = () => {
     Scroller.scrollToTop();
   }
 
-  render () {
+  render() {
     return(
       <div>
         <div className="navbar-fixed">

@@ -13,11 +13,6 @@ const PARALLAX_STRENGTH = 300;   // Strength of parallax effect (larger number =
 const PARALLAX_HEIGHT = "400px"; // Height of parallax element
 
 class Main extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
 
   render() {
     return (
