@@ -10,7 +10,7 @@ import lightBulbImage from "../../assets/images/pexels-photo-355904.jpeg";
 import codeImage from "../../assets/images/black-and-white-code-programming-tech-79290.jpeg"
 
 const PARALLAX_STRENGTH = 300;   // Strength of parallax effect (larger number == less background scrolling)
-const PARALLAX_HEIGHT = "300px"; // Height of parallax element
+const PARALLAX_HEIGHT = "400px"; // Height of parallax element
 
 class Main extends React.Component {
   constructor(props) {

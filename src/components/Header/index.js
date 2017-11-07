@@ -1,17 +1,14 @@
 import React from "react";
 import CSSModules from "react-css-modules";
 import styles from "./Header.module.css";
-import Scroll from "react-scroll";
-
-const Link = Scroll.Link;
-const scroll = Scroll.animateScroll;
+import { Link } from "react-scroll";
 
 class Header extends React.Component {
 
   render () {
     return(
       <nav>
-        <div className="nav-wrapper" styleName="nav-wrapper">
+        <div className="nav-wrapper blue darken-1" styleName="nav-wrapper">
           <a href="#!" styleName="logo">Joseph Huynh</a>
           <a href="#" data-activates="burger-menu" className="button-collapse"><i className="material-icons">menu</i></a>
           <ul className="right hide-on-med-and-down">

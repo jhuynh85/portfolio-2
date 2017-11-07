@@ -7,7 +7,7 @@ const date = new Date();
 const year = date.getFullYear();
 
 const Footer = () => (
-  <footer className="page-footer" styleName="centeredText">
+  <footer className="page-footer blue darken-1" styleName="centeredText">
     Copyright © {year} Joseph Huynh
   </footer>
 );
