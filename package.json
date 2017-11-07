@@ -9,9 +9,11 @@
     "react": "^16.0.0",
     "react-css-modules": "^4.7.1",
     "react-dom": "^16.0.0",
+    "react-icons": "^2.2.7",
     "react-parallax": "^1.5.0",
     "react-rotating-text": "^1.2.1",
     "react-router-dom": "^4.2.2",
+    "react-scroll": "^1.6.4",
     "react-scroll-parallax": "^1.1.1",
     "webfontloader": "^1.6.28"
   },

@@ -2,6 +2,7 @@ import React from "react";
 import CSSModules from "react-css-modules";
 import Parallax from "../../components/Parallax";
 import RotatingText from "../../components/Rotating-Text";
+import { Element } from "react-scroll";
 
 import styles from "./Main.module.css";
 import coffeeImage from "../../assets/images/cup-of-coffee-laptop-office-macbook-89786.jpeg";
@@ -53,7 +54,9 @@ class Main extends React.Component {
           elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim
           aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.
         </p>
-        <Parallax bgImage={lightBulbImage} strength={PARALLAX_STRENGTH} height={PARALLAX_HEIGHT} />
+        <Element name="portfolio">
+          <Parallax bgImage={lightBulbImage} strength={PARALLAX_STRENGTH} height={PARALLAX_HEIGHT} />
+        </Element>
         <h2>Lorem Ipsum</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt
@@ -83,7 +86,9 @@ class Main extends React.Component {
           elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim
           aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.
         </p>
-        <Parallax bgImage={codeImage} strength={PARALLAX_STRENGTH} height={PARALLAX_HEIGHT} />
+        <Element name="contact">
+          <Parallax bgImage={codeImage} strength={PARALLAX_STRENGTH} height={PARALLAX_HEIGHT} />
+        </Element>
         <h2>Lorem Ipsum</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt
