@@ -6,7 +6,7 @@ import styles from "./Rotating-Text.module.css";
 import "./react-rotating-text-cursor.css";
 
 const RotatingText = props => (
-  <ReactRotatingText items={props.rotatingTextArray} color="white" />
+  <ReactRotatingText className="noselect" items={props.rotatingTextArray} color="white" />
 );
 
 export default CSSModules(RotatingText, styles);

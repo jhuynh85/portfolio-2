@@ -12,6 +12,14 @@ p {
     font-weight: 300;
 }
 
-p:last-child {
-    margin-bottom: 0;
+@media screen and (min-width: 500px) {
+    p {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+.header-title {
+    composes: noselect from "../../index.css";
+    margin-top: 40px;
 }

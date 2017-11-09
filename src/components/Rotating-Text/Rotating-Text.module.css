@@ -1,16 +1,16 @@
 span {
   font-size: 5rem;
   font-family: "Consolas", monospace;
+  cursor: default;
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
   span {
     font-size: 4rem;
   }
 }
 
-
-@media (max-width: 500px){
+@media screen and (max-width: 500px){
   span {
     font-size: 3rem;
   }
