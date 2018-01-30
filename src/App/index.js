@@ -4,9 +4,9 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 
 // Import components
-import Footer from "../Footer";
-import Header from "../Header";
-import Main from "../../pages/Main";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Main from "../pages/Main";
 
 class App extends Component {
   render() {
